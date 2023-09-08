@@ -1,7 +1,19 @@
+import Hero from "@/components/Hero";
+import TopCities from "./components/Navigation/TopCities";
+import CollegeExamPicker from "./components/Navigation/CollegeExamPicker";
+import CollegeExplorer from "./components/Colleges/CollegeExplorer";
+import ExamExplorer from "./components/Exams/ExamExplorer";
+import CourseExplorer from "./components/Courses/CourseExplorer";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="text-xl">Hello World</h1>
+      <Hero />
+      <TopCities />
+      <CollegeExamPicker />
+      <CollegeExplorer />
+      <ExamExplorer />
+      <CourseExplorer />
     </div>
   );
 }

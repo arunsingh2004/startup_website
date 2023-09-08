@@ -13,15 +13,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <nav>
-        <Navbar />
-      </nav>
-      <body className={`min-h-screen bg-white text-black px-40`}>
-        {children}
+      <body className={`bg-white text-black`}>
+        <nav>
+          <Navbar />
+        </nav>
+        <main className="min-h-screen px-40">{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
-      <footer>
-        <Footer />
-      </footer>
     </html>
   );
 }
